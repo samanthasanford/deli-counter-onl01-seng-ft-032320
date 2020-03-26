@@ -7,8 +7,18 @@ def line(katz_deli)
     
   else 
    counter = 1 
-   message = "The line is currently:"
+   string = "The line is currently:"
    
+   katz_deli.each do |name|
+     string << " #{counter}. #{name}"
+     
+     counter += 1 
+   end
+   
+   puts string 
+   
+ end
+ 
    
   
 end 
